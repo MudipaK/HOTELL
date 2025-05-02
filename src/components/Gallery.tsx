@@ -3,38 +3,39 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 const images = [
   {
-    src: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3',
-    alt: 'Wedding Hall Setup',
-    category: 'wedding'
+    src: '/buffet.jpg',
+    alt: 'Buffet Setup',
+    category: 'buffet',
   },
   {
-    src: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3',
-    alt: 'Luxury Room',
-    category: 'rooms'
+    src: '/haal2.jpg',
+    alt: 'Wedding Hall 2',
+    category: 'wedding',
   },
   {
-    src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3',
-    alt: 'Fine Dining',
-    category: 'restaurant'
+    src: '/hall.jpg',
+    alt: 'Main Wedding Hall',
+    category: 'wedding',
   },
   {
-    src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3',
-    alt: 'Wedding Reception',
-    category: 'wedding'
+    src: '/How To Set Up A Buffet.jpg',
+    alt: 'How To Set Up A Buffet',
+    category: 'buffet',
   },
   {
-    src: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3',
-    alt: 'Suite Room',
-    category: 'rooms'
+    src: '/Luxury hotel room.jpg',
+    alt: 'Luxury Hotel Room',
+    category: 'rooms',
   },
   {
-    src: 'https://images.unsplash.com/photo-1551782450-17144efb9c50?ixlib=rb-4.0.3',
-    alt: 'Gourmet Cuisine',
-    category: 'restaurant'
-  }
+    src: '/The hotel room.jpg',
+    alt: 'The Hotel Room',
+    category: 'rooms',
+  },
 ];
 
 const Gallery = () => {
