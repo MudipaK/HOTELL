@@ -27,7 +27,7 @@ const About = () => {
           >
             <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                src="/487389806_1096923699120530_5702554477242212316_n.jpg"
                 alt="Sangria Grand Hotel Exterior"
                 className="object-cover w-full h-full"
               />

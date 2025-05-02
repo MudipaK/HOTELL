@@ -113,74 +113,13 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-gray-700 mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#800020]"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-gray-700 mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#800020]"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-gray-700 mb-2">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#800020]"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-gray-700 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#800020]"
-                  required
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-[#800020] text-white py-3 rounded-md hover:bg-[#600018] transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
+            <div className="flex justify-center items-center h-full">
+              <img
+                src="/contact.jpg"
+                alt="Contact Wedding"
+                className="rounded-3xl shadow-2xl border-4 border-[#D4AF37]/40 max-w-md w-full object-cover object-center bg-white/60 backdrop-blur-md"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
