@@ -6,33 +6,33 @@ import Image from 'next/image';
 const images = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    alt: 'Grand Lobby',
+    src: '/buffet.jpg',
+    alt: 'Buffet Setup',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    alt: 'Presidential Suite',
+    src: '/haal2.jpg',
+    alt: 'Wedding Hall 2',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
-    alt: 'Executive Room',
+    src: '/hall.jpg',
+    alt: 'Main Wedding Hall',
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1566669437685-5d0c0e0c0c0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    alt: 'Deluxe Room',
+    src: '/How To Set Up A Buffet.jpg',
+    alt: 'How To Set Up A Buffet',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    alt: 'Fine Dining Restaurant',
+    src: '/Luxury hotel room.jpg',
+    alt: 'Luxury Hotel Room',
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    alt: 'Luxury Spa',
+    src: '/The hotel room.jpg',
+    alt: 'The Hotel Room',
   },
   {
     id: 7,

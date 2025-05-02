@@ -9,21 +9,21 @@ const rooms = [
     name: 'Luxury Suite',
     description: 'Spacious suite with panoramic views and premium amenities',
     price: '$299/night',
-    image: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: '/Luxury hotel room.jpg',
   },
   {
     id: 2,
     name: 'Executive Room',
     description: 'Modern room with work space and city views',
     price: '$199/night',
-    image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
+    image: '/The hotel room.jpg',
   },
   {
     id: 3,
     name: 'Deluxe Room',
     description: 'Comfortable room with all essential amenities',
     price: '$149/night',
-    image: 'https://images.unsplash.com/photo-1566669437685-5d0c0e0c0c0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: '/haal2.jpg',
   },
 ];
 
