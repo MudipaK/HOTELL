@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const AboutUs = () => {
   return (
@@ -16,17 +17,21 @@ const AboutUs = () => {
             className="relative"
           >
             <div className="relative h-[500px] rounded-lg overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                 alt="Sangria Grand Hotel Exterior"
                 className="w-full h-full object-cover"
+                width={2070}
+                height={500}
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#800020] rounded-lg overflow-hidden hidden lg:block">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                 alt="Luxury Interior"
                 className="w-full h-full object-cover"
+                width={2070}
+                height={500}
               />
             </div>
           </motion.div>
@@ -43,7 +48,7 @@ const AboutUs = () => {
               Welcome to Sangria Grand Hotel, where luxury meets comfort. Our hotel has been serving guests with exceptional hospitality since 1995. Located in the heart of the city, we offer a perfect blend of modern amenities and traditional elegance.
             </p>
             <p className="text-gray-600 mb-6">
-              Our commitment to excellence has earned us numerous awards and recognition in the hospitality industry. We take pride in providing our guests with an unforgettable experience, whether they're here for business or leisure.
+              Our commitment to excellence has earned us numerous awards and recognition in the hospitality industry. We take pride in providing our guests with an unforgettable experience, whether they&apos;re here for business or leisure.
             </p>
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="flex items-center">
@@ -75,4 +80,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs; 
+export default AboutUs;

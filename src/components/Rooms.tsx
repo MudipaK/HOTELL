@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const rooms = [
   {
@@ -43,10 +44,12 @@ const Rooms = () => {
               className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <div className="relative h-64">
-                <img
+                <Image
                   src={room.image}
                   alt={room.name}
-                  className="w-full h-full object-cover"
+                  className="object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="p-6">
@@ -67,4 +70,4 @@ const Rooms = () => {
   );
 };
 
-export default Rooms; 
+export default Rooms;

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -26,10 +27,11 @@ const About = () => {
             className="relative"
           >
             <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden">
-              <img
+              <Image
                 src="/487389806_1096923699120530_5702554477242212316_n.jpg"
                 alt="Sangria Grand Hotel Exterior"
                 className="object-cover w-full h-full"
+                layout="fill"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-[#D4AF37] p-4 rounded-lg shadow-lg">
@@ -50,7 +52,7 @@ const About = () => {
               Nestled in the heart of Middeniya, Sangria Grand Hotel offers an unparalleled experience of luxury and comfort. Our commitment to excellence and attention to detail ensures that every moment spent with us is truly special.
             </p>
             <p className="text-gray-600 mb-6">
-              Whether you're planning a grand wedding, a corporate event, or simply seeking a luxurious getaway, our dedicated team is here to make your experience unforgettable.
+              Whether you&apos;re planning a grand wedding, a corporate event, or simply seeking a luxurious getaway, our dedicated team is here to make your experience unforgettable.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center">

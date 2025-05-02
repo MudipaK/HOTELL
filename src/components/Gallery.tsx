@@ -99,10 +99,12 @@ const Gallery = () => {
             transition={{ duration: 0.5 }}
             className="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden"
           >
-            <img
+            <Image
               src={filteredImages[currentIndex].src}
               alt={filteredImages[currentIndex].alt}
               className="object-cover w-full h-full"
+              width={1280}
+              height={720}
             />
           </motion.div>
 
@@ -132,10 +134,12 @@ const Gallery = () => {
               className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => setCurrentIndex(index)}
             >
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
                 className="object-cover w-full h-full"
+                width={400}
+                height={300}
               />
             </motion.div>
           ))}

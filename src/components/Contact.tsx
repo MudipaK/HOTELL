@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -113,11 +114,69 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="flex justify-center items-center h-full">
-              <img
+            <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-lg">
+              <div className="mb-4">
+                <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#800020]"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#800020]"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#800020]"
+                  required
+                />
+              </div>
+              <div className="mb-6">
+                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  rows={4}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#800020]"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-[#800020] text-white px-6 py-3 rounded-md hover:bg-[#600018] transition-colors"
+              >
+                Send Message
+              </button>
+            </form>
+            <div className="mt-8">
+              <Image
                 src="/contact.jpg"
                 alt="Contact Wedding"
                 className="rounded-3xl shadow-2xl border-4 border-[#D4AF37]/40 max-w-md w-full object-cover object-center bg-white/60 backdrop-blur-md"
+                width={500}
+                height={500}
               />
             </div>
           </motion.div>
@@ -127,4 +186,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default Contact;
